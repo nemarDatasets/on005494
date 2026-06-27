@@ -2,18 +2,44 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Cued Recall of Paired Associates with Open-Loop Stimulation at Encoding or Retrieval",
+  "description": "This dataset contains intracranial electrophysiological recordings and behavioral data from a paired associates memory task with open-loop electrical brain stimulation. Participants studied word pairs, completed a distractor task, and performed cued recall while receiving stimulation at either encoding or retrieval phases. The study involved clinical collaboration across multiple sites and provides detailed stimulation parameters including electrode locations, amplitude, frequency, and pulse characteristics.",
+  "methods_description": "Participants performed a paired associates learning task consisting of 25 lists per session with the structure: encoding (6 word pairs, 4000 ms each), distractor (arithmetic problems), and cued recall (5000 ms per response). Open-loop electrical stimulation was delivered to hippocampal and entorhinal cortex electrodes during encoding (3 of 6 pairs) or retrieval (3 of 6 cues) on 20 randomized lists. Stimulation parameters included amplitude, pulse frequency, pulse width, and pulse count. Intracranial recordings were acquired using Blackrock (250 nV units) or Medtronic (0.1 µV units) systems with monopolar and bipolar montages.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
     "Haydn G. Herrema": {},
     "Michael J. Kahana": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds005494.v1.0.1",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "intracranial electrophysiology"
     },
+    {
+      "term": "iEEG"
+    },
+    {
+      "term": "Memory",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D008568"
+    },
+    {
+      "term": "paired associates learning"
+    },
+    {
+      "term": "electrical stimulation"
+    },
+    {
+      "term": "Hippocampus",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D006624"
+    },
+    {
+      "term": "Entorhinal Cortex",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D018728"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on005494",
       "identifier_type": "URL",
@@ -33,6 +59,11 @@
       "identifier": "10.1038/s41597-019-0105-7",
       "identifier_type": "DOI",
       "relation_type": "References"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds005494.v1.0.1",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -43,45 +74,21 @@
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "Neuroimaging Dataset",
   "modalities": [
     "beh",
     "ieeg"
   ],
-  "resource_type_specific": "Neuroimaging Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "28.3 GB (54 files)"
   ],
   "formats": [
     ".edf",
     ".json",
     ".md",
     ".tsv",
-    ".txt"
+    ".txt",
+    ".yml"
   ],
-  "description": "This dataset comprises intracranial electrophysiological recordings and behavioral data from a paired associates memory task with open-loop electrical brain stimulation applied during encoding or retrieval phases. Participants studied word pairs, performed distractor arithmetic tasks, and completed cued recall tests, with stimulation delivered to hippocampal and entorhinal cortex electrodes on randomly assigned lists. The dataset enables investigation of how targeted electrical stimulation affects memory encoding and retrieval processes.",
-  "methods_description": "Participants performed a paired associates learning task consisting of 25 lists per session with the structure: encoding (6 word pairs, 4000 ms each), distractor (arithmetic problems), and cued recall (5000 ms per response). Open-loop electrical stimulation was applied to single electrodes in hippocampus and entorhinal cortex on 20 of 25 lists (10 encoding stimulation, 10 retrieval stimulation). Stimulation parameters included amplitude, pulse frequency, pulse width, and pulse count. Intracranial EEG recordings were acquired using Blackrock (250 nV units) or Medtronic (0.1 µV units) systems with monopolar or bipolar referencing schemes.",
-  "keywords": [
-    {
-      "term": "intracranial EEG"
-    },
-    {
-      "term": "memory encoding"
-    },
-    {
-      "term": "memory retrieval"
-    },
-    {
-      "term": "electrical stimulation"
-    },
-    {
-      "term": "paired associates learning"
-    },
-    {
-      "term": "hippocampus"
-    },
-    {
-      "term": "entorhinal cortex"
-    }
-  ],
-  "source_hash": "210dad4a17366c91be2b57645b7b5559db0543a7b345955dd45bd1b56e4190fe"
+  "source_hash": "41c580d0f378d8cd6a94bc58d1a0f292eb812df2e718b3383f6f0264cda563d5"
 }
