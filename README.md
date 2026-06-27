@@ -1,4 +1,6 @@
-﻿### Cued Recall of Paired Associates with Open-Loop Stimulation at Encoding or Retrieval
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on005494-blue)](https://doi.org/10.82901/nemar.on005494)
+
+### Cued Recall of Paired Associates with Open-Loop Stimulation at Encoding or Retrieval
 
 #### Description
 This dataset contains behavioral events and intracranial electrophysiological recordings from a paired associates memory task with open-loop stimulation at encoding or retrieval.  The experiment consists of participants studying pairs of visually presented words, completing simple arithmetic problems that function as a distractor, and then completing a cued recall task.  The data was collected at clinical sites across the country as part of a collaboration with the Computational Memory Lab at the University of Pennsylvania.  This dataset is an open-loop stimulation version of the [PAL1](https://openneuro.org/datasets/ds005059) dataset.
