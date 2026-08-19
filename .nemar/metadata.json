@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Cued Recall of Paired Associates with Open-Loop Stimulation at Encoding or Retrieval",
-  "description": "This dataset comprises intracranial electrophysiological recordings and behavioral data from a paired associates memory task with open-loop electrical brain stimulation applied during encoding or retrieval phases. Participants studied word pairs, performed a distractor task, and completed cued recall, with stimulation delivered to hippocampal and entorhinal cortex electrodes on randomly assigned lists. The dataset enables investigation of how targeted electrical stimulation affects memory encoding and retrieval processes.",
-  "methods_description": "Participants performed a paired associates learning task consisting of 25 lists per session with the structure: encoding (6 word pairs, 4000 ms each), distractor (arithmetic problems), and cued recall (5000 ms per response). Open-loop electrical stimulation was delivered to single electrodes in hippocampus and entorhinal cortex on 20 of 25 lists (10 encoding stimulation, 10 retrieval stimulation). Stimulation parameters included amplitude, pulse frequency, pulse width, and pulse count. Intracranial electrophysiological recordings were acquired using Blackrock (250 nV units) or Medtronic (0.1 µV units) systems with monopolar or bipolar referencing schemes.",
+  "description": "This dataset comprises intracranial EEG recordings and behavioral events from a paired-associates memory task incorporating open-loop electrical stimulation at either encoding or retrieval. Participants studied word pairs, performed an arithmetic distractor task, and completed cued recall, with stimulation applied to hippocampal or entorhinal cortex electrodes on a subset of lists. Data were collected across multiple clinical sites in collaboration with the University of Pennsylvania Computational Memory Lab, and represent an open-loop stimulation variant of the PAL1 dataset.",
+  "methods_description": "Each session consisted of 25 lists of encoding, distractor, and cued recall phases. During encoding, 6 word pairs were shown sequentially (4000 ms each, 1000 ms ISI). During cued recall, one word from each pair was presented as a cue with 5000 ms allowed for vocal recall. Open-loop electrical stimulation was delivered to a single electrode (hippocampus or entorhinal cortex) during encoding or retrieval on designated lists, with parameters (anode/cathode, amplitude, pulse frequency, pulse width, pulse count) recorded in behavioral event files. Stimulation began 200 ms before and ended 400 ms after stimulus/cue presentation, lasting 4.6 seconds total. Intracranial recordings were obtained using Blackrock and Medtronic systems, with monopolar and bipolar referencing schemes provided.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -12,38 +12,39 @@
   },
   "keywords": [
     {
-      "term": "intracranial electrophysiology"
-    },
-    {
       "term": "iEEG"
     },
     {
-      "term": "memory encoding"
+      "term": "intracranial electrophysiology"
     },
     {
-      "term": "memory retrieval"
+      "term": "Memory",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D008568"
     },
     {
-      "term": "electrical stimulation"
+      "term": "paired associate learning"
     },
     {
-      "term": "paired associates learning"
+      "term": "electrical brain stimulation"
     },
     {
-      "term": "hippocampus"
+      "term": "cued recall"
     },
     {
-      "term": "entorhinal cortex"
+      "term": "Hippocampus",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D006624"
+    },
+    {
+      "term": "Entorhinal Cortex",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D018728"
     }
   ],
   "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on005494",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005494",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
     },
@@ -61,6 +62,11 @@
       "identifier": "10.18112/openneuro.ds005494.v1.0.1",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on005494",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
