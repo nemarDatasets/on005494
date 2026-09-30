@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Cued Recall of Paired Associates with Open-Loop Stimulation at Encoding or Retrieval",
-  "description": "This dataset comprises intracranial EEG recordings and behavioral events from a paired-associates memory task incorporating open-loop electrical stimulation at either encoding or retrieval. Participants studied word pairs, performed an arithmetic distractor task, and completed cued recall, with stimulation applied to hippocampal or entorhinal cortex electrodes on a subset of lists. Data were collected across multiple clinical sites in collaboration with the University of Pennsylvania Computational Memory Lab, and represent an open-loop stimulation variant of the PAL1 dataset.",
-  "methods_description": "Each session consisted of 25 lists of encoding, distractor, and cued recall phases. During encoding, 6 word pairs were shown sequentially (4000 ms each, 1000 ms ISI). During cued recall, one word from each pair was presented as a cue with 5000 ms allowed for vocal recall. Open-loop electrical stimulation was delivered to a single electrode (hippocampus or entorhinal cortex) during encoding or retrieval on designated lists, with parameters (anode/cathode, amplitude, pulse frequency, pulse width, pulse count) recorded in behavioral event files. Stimulation began 200 ms before and ended 400 ms after stimulus/cue presentation, lasting 4.6 seconds total. Intracranial recordings were obtained using Blackrock and Medtronic systems, with monopolar and bipolar referencing schemes provided.",
+  "description": "This dataset provides intracranial EEG recordings and behavioral events from a cued recall paired-associates memory task with open-loop electrical stimulation. Participants studied word pairs, completed an arithmetic distractor, and then performed cued recall. Stimulation was delivered to single hippocampal or entorhinal electrodes during either encoding or retrieval. Data were collected at clinical sites in collaboration with the Computational Memory Lab at the University of Pennsylvania.",
+  "methods_description": "Each session comprised 25 lists of encoding (6 word pairs, 4000 ms each), arithmetic distractor, and cued recall (5000 ms per cue). Twenty lists per session were stimulation lists, 10 with stimulation at encoding and 10 at retrieval, on alternating pairs or cues, and 5 lists had no stimulation. Stimulation began 200 ms before stimulus onset and lasted 4.6 s. Stimulation parameters are recorded in the events files. Recordings were made with Blackrock or Medtronic systems, with monopolar and bipolar montages provided.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -12,24 +12,19 @@
   },
   "keywords": [
     {
-      "term": "iEEG"
+      "term": "intracranial EEG"
     },
     {
-      "term": "intracranial electrophysiology"
+      "term": "electrical stimulation"
     },
     {
-      "term": "Memory",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D008568"
-    },
-    {
-      "term": "paired associate learning"
-    },
-    {
-      "term": "electrical brain stimulation"
+      "term": "paired associates learning"
     },
     {
       "term": "cued recall"
+    },
+    {
+      "term": "episodic memory"
     },
     {
       "term": "Hippocampus",
@@ -83,7 +78,7 @@
     "ieeg"
   ],
   "sizes": [
-    "28.3 GB (54 files)"
+    "26.33 GB (54 files)"
   ],
   "formats": [
     ".edf",
